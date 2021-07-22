@@ -39,3 +39,27 @@ const newJeckt = async () => {
 };
 
 newJeckt()
+
+
+const obj = {
+    name: 'Vasya',
+    age: 25,
+};
+
+const newlist = () => new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve(obj)
+        reject('error')
+    });
+});
+
+const newFunction = async() => {
+    try {
+        const b = await newlist()
+        console.log(b)
+    } catch(err) {
+        console.log(err)
+    };
+};
+
+newFunction()
