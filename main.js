@@ -7,7 +7,7 @@ let b = new Promise((resolve, reject) => {
 
 b.then(() => {
     console.log(a)
-})
+});
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const obj = {
@@ -19,7 +19,7 @@ const newPeople = () => new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve(obj)
         reject('error')
-    },)
+    }, 1000);
 });
 
 // newPeople().then((oke) => console.log(oke))
@@ -35,7 +35,7 @@ const newJeckt = async () => {
         console.error(err)
     }finally {
         console.log(1)
-    }
+    };
 };
 
 newJeckt()
