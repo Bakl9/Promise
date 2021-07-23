@@ -1,7 +1,7 @@
 
 let b = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve(a = 99);
+        resolve(a = 99); 
     },0);
 });
 
